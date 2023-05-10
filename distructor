@@ -1,0 +1,29 @@
+//distructor
+#include<iostream>
+using namespace std;
+class ayush
+{
+	int i,n,sum;
+	public:
+	ayush(int m,int c)
+	{
+		i=m;
+		n=c;
+		sum=i+n;
+	}
+	int dis()
+	{
+		return sum; 
+	}
+	~ayush()
+	{
+		cout<<"Hello ayush distructor is working ";
+	}
+};
+int main()
+{
+	ayush ayu(400,20);
+	int t=ayu.dis();
+	cout<<t<<endl;
+	return 0;
+}
